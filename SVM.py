@@ -67,17 +67,3 @@ svm_model.fit(X_train, y_train)
 svm_pred = svm_model.predict(X_test)
 print("\nSVM Accuracy:", accuracy_score(y_test, svm_pred))
 print("SVM Confusion Matrix:\n", confusion_matrix(y_test, svm_pred))
-
-# 2. Decision Tree
-dt_model = DecisionTreeClassifier()
-dt_model.fit(X_train, y_train)
-dt_pred = dt_model.predict(X_test)
-print("\nDecision Tree Accuracy:", accuracy_score(y_test, dt_pred))
-print("Decision Tree Confusion Matrix:\n", confusion_matrix(y_test, dt_pred))
-
-# 3. Naive Bayes
-nb_model = GaussianNB()
-nb_model.fit(X_train, y_train)
-nb_pred = nb_model.predict(X_test)
-print("\nNaive Bayes Accuracy:", accuracy_score(y_test, nb_pred))
-print("Naive Bayes Confusion Matrix:\n", confusion_matrix(y_test, nb_pred))
